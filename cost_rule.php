@@ -1,3 +1,4 @@
+<?php
 add_filter( 'woocommerce_distance_rate_shipping_rule_cost_distance_shipping', function( $rule_cost, $rule, $distance, $package ) {
 	$order_total = $package['contents_cost'];
 	if ( $distance <= 15 ) {
